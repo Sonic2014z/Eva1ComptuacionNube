@@ -34,6 +34,25 @@
             color: #333;
             word-break: break-all;
         }
+        .button-container {
+            margin-top: 32px;
+            display: flex;
+            gap: 16px;
+        }
+        .btn {
+            padding: 10px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .btn-blue {
+            background: #1976d2;
+        }
+        .btn-green {
+            background: #388e3c;
+        }
     </style>
 </head>
 <body>
@@ -49,5 +68,24 @@
             <div class="avatar-name">Vicente Rodriguez</div>
         </div>
     </div>
+
+    <div class="button-container">
+        <button type="button" class="btn btn-blue" onclick="goLog()">
+            Ver Log de Trabajo
+        </button>
+
+        <a href="log/reporte_formal.html">
+            <button type="button" class="btn btn-green">
+                Ver Reporte Formal
+            </button>
+        </a>
+    </div>
+
+    <script>
+        function goLog(){
+            // Ruta relativa al archivo dentro de la carpeta "log"
+            window.location.href = "log/log_trabajo.html";
+        }
+    </script>
 </body>
 </html>
