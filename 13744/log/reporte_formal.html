@@ -58,10 +58,18 @@ sudo systemctl status apache2
 
     <div class="mb-6">
       <strong class="block text-lg text-blue-800 mb-2">5. Clonación del Repositorio y Evidencias</strong>
-      <p class="text-gray-700 mb-2">Finalmente, se realizó la clonación del repositorio de GitHub y se subieron las evidencias del proceso.</p>
-      <pre class="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto text-sm">
-git clone &lt;URL-del-repositorio&gt;
-      </pre>
+      <p class="text-gray-700 mb-2">Desafortunadamente hubo un problema al realizar la clonación del repositorio que contenía la página web, eliminamos todo lo relacionado al repositorio y a la clonación (.git), utilizamos sudo rm -rf ./* y agregamos otro sudo rm -rf .git para eliminar el archivo .git</p>
+                <pre class="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto text-sm">
+sudo rm -rf ./*
+sudo rm -rf .git
+                </pre>
+    </div>
+        <div class="mb-6">
+      <strong class="block text-lg text-blue-800 mb-2">6. Clonación final del repositorio</strong>
+      <p class="text-gray-700 mb-2">Finalmente se le hicieron modificaciones a los archivos html para que se ajusten a los requerimientos del proyecto, se utilizó el siguiente comando para clonar el repositorio:</p>
+                <pre class="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto text-sm">
+git clone https://github.com/Sonic2014z/Eva1ComptuacionNube .
+                </pre>
     </div>
   </div>
 </body>
